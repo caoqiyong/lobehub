@@ -273,8 +273,28 @@ describe('LobeWattAI - custom features', () => {
       const models = await params.models!({ client: mockClient as any });
       const model = models[0];
 
-      // Should have properties from both API and model-bank
+      // Should keep the Watt catalog contract, not another vendor's
       expect(model.id).toBe('GLM-5.1');
+      expect(model.contextWindowTokens).toBe(202_752);
+      expect(model.maxOutput).toBe(131_072);
+    });
+
+    it('should not let same-name upstream vendor cards override Watt limits', async () => {
+      const mockClient = {
+        apiKey: 'test',
+        baseURL: 'https://api.watt-cloud.com/v1',
+        models: {
+          list: vi.fn().mockResolvedValue({
+            data: [{ id: 'MiniMax-M3', object: 'model', owned_by: 'watt' }],
+          }),
+        },
+      };
+
+      const models = await params.models!({ client: mockClient as any });
+      const model = models.find((m) => m.id === 'MiniMax-M3');
+
+      // MiniMax-M3 is 524,288 on Watt (MiniMax itself serves 1M)
+      expect(model?.contextWindowTokens).toBe(524_288);
     });
 
     it('should handle models not in model-bank', async () => {

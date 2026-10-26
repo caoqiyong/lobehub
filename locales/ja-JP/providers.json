@@ -79,7 +79,6 @@
   "vllm.description": "vLLMは、高速かつ使いやすいLLM推論・提供ライブラリです。",
   "volcengine.description": "ByteDanceのモデルサービスプラットフォームで、安全性が高く、機能豊富でコスト競争力のあるモデルアクセスと、データ、ファインチューニング、推論、評価のエンドツーエンドツールを提供します。",
   "volcenginecodingplan.description": "ByteDanceのVolcengineコーディングプランは、固定料金のサブスクリプションを通じてDoubao-Seed-Code、GLM-4.7、DeepSeek-V3.2、Kimi-K2.5を含む複数のコーディングモデルへのアクセスを提供します。",
-  "watt.description": "Watt Cloud は、単一の OpenAI 互換 API を通じて DeepSeek、GLM、Hunyuan、Kimi、MiniMax、Qwen3.5 の各モデルファミリーへのアクセスを提供します。",
   "wenxin.description": "Wenxinは、基盤モデルとAIネイティブアプリ開発のための企業向けオールインワンプラットフォームで、生成AIモデルとアプリケーションのワークフローを支えるエンドツーエンドツールを提供します。",
   "xai.description": "xAIは、科学的発見を加速し、人類の宇宙理解を深めることを使命とするAIを開発しています。",
   "xiaomimimo.description": "Xiaomi MiMo は、OpenAI 互換の API を備えた会話型モデルサービスを提供します。mimo-v2-flash モデルは、高度な推論、ストリーミング出力、関数呼び出し、256K のコンテキストウィンドウ、および最大 128K の出力に対応しています。",

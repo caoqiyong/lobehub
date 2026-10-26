@@ -2,7 +2,7 @@ import { ModelProvider } from 'model-bank';
 
 import type { OpenAICompatibleFactoryOptions } from '../../core/openaiCompatibleFactory';
 import { createOpenAICompatibleRuntime } from '../../core/openaiCompatibleFactory';
-import { processMultiProviderModelList } from '../../utils/modelParse';
+import { MODEL_LIST_CONFIGS, processModelList } from '../../utils/modelParse';
 
 // Models that take no caller thinking toggle on this host
 // (docs: https://www.watt-cloud.com/docs/inference/features/deep-thinking).
@@ -46,12 +46,10 @@ export const params = {
     const modelsPage = (await client.models.list()) as any;
     const rawList: any[] = modelsPage.data || [];
 
-    // Process the model list and remove unnecessary fields
-    const modelList: WattModelCard[] = rawList.map((model) => ({
-      id: model.id,
-    }));
-
-    return await processMultiProviderModelList(modelList, 'watt');
+    // Merge fetched IDs against the Watt catalog: matching by Watt's own
+    // cards keeps host-level limits (context, max output, pricing) from
+    // being overridden by same-name cards of the upstream vendors.
+    return await processModelList(rawList, MODEL_LIST_CONFIGS.watt, 'watt');
   },
   provider: ModelProvider.Watt,
 } satisfies OpenAICompatibleFactoryOptions;

@@ -10,7 +10,8 @@ const wattChatModels: AIChatModelCard[] = [
     description: 'Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work',
     displayName: 'DeepSeek V4 Flash',
     enabled: true,
-    family: 'deepseek-flash',
+    family: 'deepseek',
+    generation: 'deepseek-v4',
     id: 'DeepSeek-V4-Flash',
     maxOutput: 384_000,
     pricing: {
@@ -32,7 +33,8 @@ const wattChatModels: AIChatModelCard[] = [
       'Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding',
     displayName: 'DeepSeek V4 Flash 0731',
     enabled: true,
-    family: 'deepseek-flash',
+    family: 'deepseek',
+    generation: 'deepseek-v4',
     id: 'DeepSeek-V4-Flash-0731',
     maxOutput: 384_000,
     pricing: {
@@ -53,7 +55,8 @@ const wattChatModels: AIChatModelCard[] = [
     description: 'Open MoE flagship with million-token context for coding and long agent runs',
     displayName: 'DeepSeek V4 Pro',
     enabled: true,
-    family: 'deepseek-thinking',
+    family: 'deepseek',
+    generation: 'deepseek-v4',
     id: 'DeepSeek-V4-Pro',
     maxOutput: 384_000,
     pricing: {
@@ -74,7 +77,8 @@ const wattChatModels: AIChatModelCard[] = [
     description: 'DeepSeek V4.1 Flash model for reasoning and agentic coding',
     displayName: 'DeepSeek V4.1 Flash',
     enabled: true,
-    family: 'deepseek-flash',
+    family: 'deepseek',
+    generation: 'deepseek-v4.1',
     id: 'DeepSeek-V4.1-Flash',
     maxOutput: 384_000,
     pricing: {
@@ -96,7 +100,8 @@ const wattChatModels: AIChatModelCard[] = [
       'October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding',
     displayName: 'DeepSeek V4.1 Flash 1017',
     enabled: true,
-    family: 'deepseek-flash',
+    family: 'deepseek',
+    generation: 'deepseek-v4.1',
     id: 'DeepSeek-V4.1-Flash-1017',
     maxOutput: 384_000,
     pricing: {
@@ -121,6 +126,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'GLM-5.1',
     enabled: true,
     family: 'glm',
+    generation: 'glm-5.1',
     id: 'GLM-5.1',
     maxOutput: 131_072,
     pricing: {
@@ -142,6 +148,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'GLM-5.2',
     enabled: true,
     family: 'glm',
+    generation: 'glm-5.2',
     id: 'GLM-5.2',
     maxOutput: 131_072,
     pricing: {
@@ -163,6 +170,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'GLM-5.3',
     enabled: true,
     family: 'glm',
+    generation: 'glm-5.3',
     id: 'GLM-5.3',
     maxOutput: 131_072,
     pricing: {
@@ -180,7 +188,8 @@ const wattChatModels: AIChatModelCard[] = [
     description: 'Native multimodal GLM model for efficient coding and long-horizon agent tasks',
     displayName: 'GLM-5.3-Flash',
     enabled: true,
-    family: 'glm-flash',
+    family: 'glm',
+    generation: 'glm-5.3',
     id: 'GLM-5.3-Flash',
     maxOutput: 131_072,
     pricing: {
@@ -202,6 +211,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'Hy4 preview',
     enabled: true,
     family: 'hunyuan',
+    generation: 'hunyuan-4',
     id: 'Hy4-preview',
     maxOutput: 131_072,
     pricing: {
@@ -221,7 +231,8 @@ const wattChatModels: AIChatModelCard[] = [
     description: 'Earlier Kimi frontier model for long-context agents, coding, and multimodal work',
     displayName: 'Kimi K2.5',
     enabled: true,
-    family: 'kimi-k2',
+    family: 'kimi',
+    generation: 'kimi-k2.5',
     id: 'Kimi-K2.5',
     maxOutput: 180_224,
     pricing: {
@@ -243,7 +254,8 @@ const wattChatModels: AIChatModelCard[] = [
       'Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking',
     displayName: 'Kimi K2.7 Code',
     enabled: true,
-    family: 'kimi-k2',
+    family: 'kimi',
+    generation: 'kimi-k2.7',
     id: 'Kimi-K2.7-Code',
     maxOutput: 262_144,
     pricing: {
@@ -262,7 +274,8 @@ const wattChatModels: AIChatModelCard[] = [
       'Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work',
     displayName: 'Kimi K3',
     enabled: true,
-    family: 'kimi-k3',
+    family: 'kimi',
+    generation: 'kimi-k3',
     id: 'Kimi-K3',
     maxOutput: 131_072,
     pricing: {
@@ -286,6 +299,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'MiniMax-M3',
     enabled: true,
     family: 'minimax',
+    generation: 'minimax-m3',
     id: 'MiniMax-M3',
     maxOutput: 512_000,
     pricing: {
@@ -309,6 +323,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'Qwen3.5 122B-A10B',
     enabled: true,
     family: 'qwen',
+    generation: 'qwen3.5',
     id: 'Qwen3.5-122B-A10B',
     maxOutput: 65_536,
     pricing: {
@@ -330,6 +345,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'Qwen3.5 27B',
     enabled: true,
     family: 'qwen',
+    generation: 'qwen3.5',
     id: 'Qwen3.5-27B',
     maxOutput: 65_536,
     pricing: {
@@ -351,6 +367,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'Qwen3.5 35B-A3B',
     enabled: true,
     family: 'qwen',
+    generation: 'qwen3.5',
     id: 'Qwen3.5-35B-A3B',
     maxOutput: 65_536,
     pricing: {
@@ -372,6 +389,7 @@ const wattChatModels: AIChatModelCard[] = [
     displayName: 'Qwen3.5 397B-A17B',
     enabled: true,
     family: 'qwen',
+    generation: 'qwen3.5',
     id: 'Qwen3.5-397B-A17B',
     maxOutput: 65_536,
     pricing: {
