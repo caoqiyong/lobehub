@@ -79,6 +79,7 @@
   "vllm.description": "vLLM 是一個快速、易用的大型語言模型推理與服務庫。",
   "volcengine.description": "字節跳動的模型服務平台，提供安全、功能豐富且具成本效益的模型存取，並支援資料、微調、推理與評估的端到端工具鏈。",
   "volcenginecodingplan.description": "來自字節跳動的火山引擎編碼計劃通過固定費用訂閱提供對多個編碼模型（包括豆包-Seed-Code、GLM-4.7、DeepSeek-V3.2 和 Kimi-K2.5）的訪問。",
+  "watt.description": "Watt Cloud 透過統一的 OpenAI 相容 API 提供 DeepSeek、GLM、Hunyuan、Kimi、MiniMax、Qwen3.5 等系列模型。",
   "wenxin.description": "文心是一個企業級的基礎模型與 AI 原生應用開發平台，提供生成式 AI 模型與應用流程的端到端工具。",
   "xai.description": "xAI 致力於加速科學發現，目標是深化人類對宇宙的理解。",
   "xiaomimimo.description": "小米 MiMo 提供一項支援 OpenAI 相容 API 的對話模型服務。mimo-v2-flash 模型支援深度推理、串流輸出、函式呼叫、256K 上下文視窗，以及最多 128K 的輸出。",

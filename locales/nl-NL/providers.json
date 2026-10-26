@@ -79,6 +79,7 @@
   "vllm.description": "vLLM is een snelle, gebruiksvriendelijke bibliotheek voor LLM-inferentie en -diensten.",
   "volcengine.description": "Het modelserviceplatform van ByteDance biedt veilige, uitgebreide en kosteneffectieve toegang tot modellen, plus end-to-end tooling voor data, fine-tuning, inferentie en evaluatie.",
   "volcenginecodingplan.description": "Volcengine Coding Plan van ByteDance biedt toegang tot meerdere codemodellen, waaronder Doubao-Seed-Code, GLM-4.7, DeepSeek-V3.2 en Kimi-K2.5, via een abonnement met vaste kosten.",
+  "watt.description": "Watt Cloud biedt toegang tot de modelfamilies DeepSeek, GLM, Hunyuan, Kimi, MiniMax en Qwen3.5 via één OpenAI-compatibele API.",
   "wenxin.description": "Een alles-in-één platform voor fundamentele modellen en AI-native appontwikkeling voor bedrijven, met end-to-end tooling voor generatieve AI-workflows.",
   "xai.description": "xAI ontwikkelt AI om wetenschappelijke ontdekkingen te versnellen, met als missie het verdiepen van het menselijk begrip van het universum.",
   "xiaomimimo.description": "Xiaomi MiMo biedt een conversatiemodelservice met een OpenAI-compatibele API. Het mimo-v2-flash-model ondersteunt diepgaande redenering, streamingoutput, functieaanroepen, een contextvenster van 256K en een maximale output van 128K.",
